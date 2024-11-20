@@ -27,7 +27,7 @@ document.getElementById('fetchBtn').addEventListener('click', ()=>{
         
         <p><strong>Followers:</strong> ${data.followers}</p>
         <p><strong>Following:</strong> ${data.following}</p>
-        <p><strong>Following:</strong> ${data.blog || 'Nothing to show '}</p>
+        <p><a href="${data.blog || 'Nothing to show '}" target="_blank">View Blog</a></p>
         <p><a href="${data.html_url}" target="_blank">View Repos on GitHub</a></p>
       `;
         
