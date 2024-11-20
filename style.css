@@ -1,0 +1,174 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    min-height: 100vh;
+    overflow-x: hidden; 
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+input[type="text"] {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #5c6bc0;
+}
+
+button {
+    margin-left: 10px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #5c6bc0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #3949ab;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #283593;
+}
+
+#userDetails {
+    margin-top: 2rem;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#userDetails h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#userDetails p {
+    margin: 0.5rem 0;
+}
+
+#userDetails img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#userDetails a {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #5c6bc0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#userDetails a:hover {
+    color: #3949ab;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; 
+        margin-bottom: 0.8rem;
+    }
+
+    input[type="text"] {
+        width: 80%; 
+        font-size: 1.1rem;
+    }
+
+    button {
+        width: 60%; 
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 12px 20px; 
+    }
+
+    #userDetails {
+        width: 90%; 
+        padding: 15px; 
+    }
+
+    #userDetails h2 {
+        font-size: 1.3rem;  
+    }
+
+    #userDetails img {
+        width: 100px; 
+        height: 100px;
+    }
+
+    #userDetails p {
+        font-size: 0.9rem; 
+    }
+
+    #userDetails a {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; 
+        margin-bottom: 0.6rem;
+    }
+
+    input[type="text"] {
+        width: 90%; 
+    }
+
+    button {
+        width: 60%; 
+        padding: 12px 20px; 
+    }
+
+    #userDetails {
+        width: 95%; 
+        padding: 10px;
+    }
+
+    #userDetails h2 {
+        font-size: 1.2rem; 
+    }
+
+    #userDetails img {
+        width: 80px; 
+        height: 80px;
+    }
+
+    #userDetails p {
+        font-size: 0.85rem; 
+    }
+
+    #userDetails a {
+        font-size: 0.9rem; 
+    }
+}
+}
