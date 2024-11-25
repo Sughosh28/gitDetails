@@ -9,11 +9,7 @@ document.getElementById('fetchBtn').addEventListener('click',async()=>{
     const token="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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"
     const apiUrl=`https://api.github.com/users/${username}`;
 
-    await fetch(apiUrl, {
-        headers:{
-            'Authorization': `Bearer ${token}`,
-        }
-    })
+    await fetch(apiUrl)
     .then(response => {
         if (!response.ok) {
             userDetails.innerHTML = '<p><strong>User not found</strong></p>';
