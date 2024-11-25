@@ -93,6 +93,47 @@ button:active {
     color: #3949ab;
 }
 
+
+/* repoDeatils */
+#reposDetails {
+    margin-top: 2rem;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#reposDetails h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#reposDetails p {
+    margin: 0.5rem 0;
+}
+
+#reposDetails img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#reposDetails a {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #5c6bc0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#reposDetails a:hover {
+    color: #3949ab;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem; 
