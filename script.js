@@ -1,4 +1,4 @@
-document.getElementById('fetchBtn').addEventListener('click', ()=>{
+document.getElementById('fetchBtn').addEventListener('click',async()=>{
     const username=document.getElementById('username').value.trim();
     const userDetails=document.getElementById('userDetails');
 
@@ -8,7 +8,7 @@ document.getElementById('fetchBtn').addEventListener('click', ()=>{
     }
     const apiUrl=`https://api.github.com/users/${username}`;
 
-    fetch(apiUrl)
+    await fetch(apiUrl)
     .then(response => {
         if (!response.ok) {
             userDetails.innerHTML = '<p><strong>User not found</strong></p>';
@@ -35,6 +35,8 @@ document.getElementById('fetchBtn').addEventListener('click', ()=>{
     .catch(error => {
         userDetails.innerHTML = '<p><strong>Not available!</strong></p>';
     });
+
+
     
 })
 
